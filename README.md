@@ -1,4 +1,4 @@
-# LoginForm-HTML
+# LoginForm-Web
 
 **This is an website that displays a login form and a registration form on a web page.**
 
