@@ -49,5 +49,31 @@ The script then executes an INSERT query to add a new record to the users table 
 
 Finally, it sets the session variables $_SESSION["email"] and $_SESSION["password"] to the email and password provided by the user, respectively, and redirects the user to the main page of the application.
 ``` 
+***logout.php*** FILE
+```
+This is a PHP script that handles the logout functionality for a web application.
 
+The script begins by starting a session using the session_start() function. It then destroys the current session using the session_destroy() function. This function deletes all the session variables and the session cookie.
 
+Finally, it redirects the user to the login page using the header() function and the Location header.
+```
+***notes.sql*** FILE
+```
+This is a MySQL script that creates and populates two tables in a database: notes and users.
+
+The notes table has four columns: id, description, date, and user. The id column is an integer column that serves as the primary key for the table. The description column is a text column that holds the description of the note. The date column is a date column that holds the date when the note was created. The user column is a varchar column that holds the email of the user who created the note.
+
+The users table has four columns: id, first_name, last_name, and email. The id column is an integer column that serves as the primary key for the table. The first_name and last_name columns are varchar columns that hold the first name and last name of the user, respectively. The email column is a varchar column that holds the email of the user.
+
+The script also inserts several rows of sample data into the notes and users tables.
+
+The script should be executed using a MySQL client, such as the mysql command-line client or a graphical tool like PHPMyAdmin.
+```
+***index.html*** FILE
+```
+HTML document with two forms. The first form has two input fields: "email" and "password", and a submit button. The second form has four input fields
+
+The first form's action attribute specifies that when the form is submitted, the data is sent to a file called "sprawdz.php" using the POST method. The second form's action attribute specifies that when the form is submitted, the data is sent to a file called "registration.php" using the POST method.
+
+"sprawdz.php" is a script that checks the provided login credentials and "registration.php" is a script that processes user registration.
+```
